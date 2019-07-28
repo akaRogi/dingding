@@ -72,6 +72,7 @@
 					})
 					if (off) {
 						console.log('没有wifi')
+						clearInterval(this.time)
 						setInterval(() => {
 							uni.vibrateLong({
 								success: function () {
